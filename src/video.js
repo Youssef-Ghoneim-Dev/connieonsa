@@ -18,7 +18,7 @@ export default function Video({onPlay}) {
             فيديو واحد ممكن يكون بداية لحب أبدي وانسجام حقيقي في علاقتك الزوجية
             </p>
             <div className="video">
-                <video controls onPlay={onPlay}>
+                <video controls controlsList="nodownload" onPlay={onPlay}>
                     <source src="/video.mp4" type="video/mp4" />
                 </video>
                 <div>

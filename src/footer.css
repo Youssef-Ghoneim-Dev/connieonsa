@@ -109,4 +109,7 @@
   .carousel-inner {
     height: 400px !important;
   }
+  .navbar {
+    height: 60px;
+  }
 }

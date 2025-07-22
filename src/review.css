@@ -26,6 +26,12 @@
 }
 .review {
   width: 100%;
-  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review h3 {
   direction: rtl;
+  margin: 0;
+  padding: 0;
 }
