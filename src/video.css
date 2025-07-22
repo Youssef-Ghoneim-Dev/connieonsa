@@ -19,10 +19,12 @@
   box-shadow: 0 4px 20px #e1e1e1;
 }
 .video i {
-  font-size: 20px;
+  font-size: 15px;
+  color: #00000078;
 }
 .video p {
-  font-size: 20px;
+  color: #00000078;
+  font-size: 15px;
   width: fit-content;
   margin: 0;
 }

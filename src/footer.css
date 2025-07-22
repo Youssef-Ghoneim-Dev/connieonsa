@@ -44,63 +44,81 @@
 }
 @media (max-width: 680px) {
   .footer .footer-text-flex p {
-    font-size: 15px;
+    font-size: 15px !important;
   }
   .footer .footer-text-flex .pp {
-    font-size: 15px;
+    font-size: 15px !important;
   }
   .footer i {
-    font-size: 40px;
+    font-size: 40px !important;
   }
 }
 @media (max-width: 550px) {
   .flex p {
-    font-size: 18px;
+    font-size: 20px !important;
+    font-weight: bolder;
   }
-}
-@media (max-width: 550px) {
-  .flex p {
-    font-size: 18px;
+  .video i {
+    font-size: 14px !important;
+  }
+  .video p {
+    font-size: 14px !important;
+    width: fit-content;
+    margin: 0;
   }
 }
 @media (max-width: 480px) {
   .Connie {
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: bold;
   }
   .Mai {
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: bold;
+  }
+  .video i {
+    font-size: 12px !important;
+  }
+  .video p {
+    font-size: 12px !important;
+    width: fit-content;
+    margin: 0;
   }
 }
 @media (max-width: 400px) {
   .Connie {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .Mai {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .flex p {
-    font-size: 16px;
+    font-size: 16px !important;
     font-weight: bolder;
   }
   .footer .footer-text-flex p {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .footer .footer-text-flex .pp {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .footer i {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   .btn {
     padding: 10px 80px;
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .flex {
     gap: 0px;
   }
   .navbar {
     height: 60px;
+  }
+  .video i {
+    font-size: 10px !important;
+  }
+  .video p {
+    font-size: 10px !important;
   }
 }
