@@ -1,0 +1,22 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.video div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.video i {
+  font-size: 20px;
+}
+.video p {
+  font-size: 20px;
+  width: fit-content;
+  margin: 0;
+}
