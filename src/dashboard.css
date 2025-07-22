@@ -1,0 +1,32 @@
+.overflow {
+  width: 1400px;
+  overflow-x: auto;
+}
+.visitor-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  direction: rtl;
+}
+
+.visitor-table th,
+.visitor-table td {
+  border: 1px solid #e1e1e1;
+  padding: 12px;
+  text-align: center;
+  color: #000;
+}
+
+.visitor-table thead {
+  background-color: #d93691;
+}
+.visitor-table thead tr th {
+  color: #ffffff;
+  font-family: "inder";
+}
+
+.visitor-table tbody tr:hover {
+  background-color: #e1e1e1;
+}

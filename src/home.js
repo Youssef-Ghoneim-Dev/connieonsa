@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc , serverTimestamp  } from "firebase/firestore";
 import db from "./firebase.js";
 import Navbar from "./navbar.js";
 import Buttons from "./button.js";
@@ -38,6 +38,21 @@ const Home = () => {
       }
     }
   };
+  async function logVisitor() {
+  try {
+    await addDoc(collection(db, "visitors"), {
+      timestamp: serverTimestamp(),
+      userAgent: navigator.userAgent,
+      language: navigator.language,
+      platform: navigator.platform,
+    });
+  } catch (e) {
+    console.error("Error logging visitor:", e);
+  }
+}
+useEffect(() => {
+  logVisitor();
+}, []);
   return (
     <div>
         <Navbar />

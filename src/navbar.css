@@ -31,9 +31,10 @@
   gap: 20px;
 }
 .flex p {
+  font-family: "Inder";
   width: 80%;
   text-align: center;
-  font-size: 22px;
+  font-size: 35px;
 }
 .p {
   width: 50%;

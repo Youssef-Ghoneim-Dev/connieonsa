@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { collection, onSnapshot } from "firebase/firestore";
+import { collection, onSnapshot, getDocs, deleteDoc, doc } from "firebase/firestore";
 import db from "./firebase.js";
 import Navbar from "./navbar.js";
 import Footer from "./footer.js";
@@ -7,12 +7,22 @@ import Footer from "./footer.js";
 const Dashboard = () => {
   const [visitorCount, setVisitorCount] = useState(null);
   const [videoViewCount, setVideoViewCount] = useState(null);
+  const [visitors, setVisitors] = useState([]);
+
+  async function fetchVisitors() {
+    const snapshot = await getDocs(collection(db, "visitors"));
+    const visitorsData = snapshot.docs.map(doc => doc.data());
+    setVisitors(visitorsData);
+  }
+
+  useEffect(() => {
+    fetchVisitors();
+  }, []);
 
   useEffect(() => {
     const unsubscribe = onSnapshot(collection(db, "visits"), (snapshot) => {
       setVisitorCount(snapshot.size);
     });
-
     return () => unsubscribe();
   }, []);
 
@@ -20,28 +30,69 @@ const Dashboard = () => {
     const unsubscribe = onSnapshot(collection(db, "videoViews"), (snapshot) => {
       setVideoViewCount(snapshot.size);
     });
-
     return () => unsubscribe();
   }, []);
+
+  const resetData = async () => {
+    try {
+      const visitsSnapshot = await getDocs(collection(db, "visits"));
+      visitsSnapshot.forEach(async (document) => {
+        await deleteDoc(doc(db, "visits", document.id));
+      });
+
+      const viewsSnapshot = await getDocs(collection(db, "videoViews"));
+      viewsSnapshot.forEach(async (document) => {
+        await deleteDoc(doc(db, "videoViews", document.id));
+      });
+
+      setVisitorCount(0);
+      setVideoViewCount(0);
+    } catch (error) {
+      console.error("فشل في التصفير:", error);
+    }
+  };
+
   return (
     <div>
-        <Navbar />
-        <div className="flex">
-            <div className="p">
-                {visitorCount !== null ? (
-                    <p>عدد الزوار: {visitorCount}</p>
-                ) : (
-                    <p>جارٍ تحميل عدد الزوار...</p>
-                )}
-
-                {videoViewCount !== null ? (
-                    <p>عدد مشاهدات الفيديو: <strong>{videoViewCount}</strong></p>
-                ) : (
-                    <p>جارٍ تحميل عدد المشاهدات...</p>
-                )}
-            </div>
-            <Footer />
+      <Navbar />
+      <div className="flex">
+        <div className="p">
+          {visitorCount !== null ? (
+            <p>عدد الزوار: {visitorCount}</p>
+          ) : (
+            <p>جارٍ تحميل عدد الزوار...</p>
+          )}
+          {videoViewCount !== null ? (
+            <p>عدد مشاهدات الفيديو: {videoViewCount}</p>
+          ) : (
+            <p>جارٍ تحميل عدد المشاهدات...</p>
+          )}
+          <button className="btn mt-2" onClick={resetData}>تصفير عدد الزوار والمشاهدات</button>
         </div>
+          <div className="overflow">
+                    <table className="visitor-table">
+            <thead>
+                <tr>
+                <th>المتصفح</th>
+                <th>اللغة</th>
+                <th>النظام</th>
+                <th>الوقت</th>
+                </tr>
+            </thead>
+            <tbody>
+                {visitors.map((v, i) => (
+                <tr key={i}>
+                    <td>{v.userAgent}</td>
+                    <td>{v.language}</td>
+                    <td>{v.platform}</td>
+                    <td>{v.timestamp?.toDate().toLocaleString()}</td>
+                </tr>
+                ))}
+            </tbody>
+        </table>
+          </div>
+        <Footer />
+      </div>
     </div>
   );
 };

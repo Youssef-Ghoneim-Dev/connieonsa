@@ -25,15 +25,82 @@
   gap: 10px;
 }
 .footer .footer-text-flex p {
-  font-size: 15px;
+  font-family: "Inder";
+  font-size: 20px;
   margin: 0;
 }
 .footer .footer-text-flex p span {
+  font-family: "ArefRuqaa";
   color: #d93691;
-  font-size: 15px;
+  font-size: 20px;
   margin: 0;
 }
 .footer i {
   color: #d93691;
   font-size: 50px;
+  transition: 0.5s all;
+}
+.footer i:hover {
+  color: #a31061;
+}
+@media (max-width: 680px) {
+  .footer .footer-text-flex p {
+    font-size: 15px;
+  }
+  .footer .footer-text-flex p span {
+    font-size: 15px;
+  }
+  .footer i {
+    font-size: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .flex p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .flex p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .Connie {
+    font-size: 18px;
+  }
+  .Mai {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .Connie {
+    font-size: 14px;
+  }
+  .Mai {
+    font-size: 14px;
+  }
+  .flex p {
+    font-size: 14px;
+  }
+  .footer .footer-text-flex p {
+    font-size: 14px;
+  }
+  .footer .footer-text-flex p span {
+    font-size: 14px;
+  }
+  .footer i {
+    font-size: 30px;
+  }
+  .footer img {
+    height: 30px;
+    width: 30px;
+  }
+  .navbar-content img {
+    height: 30px;
+    width: 30px;
+  }
+  .btn {
+    padding: 10px 80px;
+    font-size: 14px;
+  }
 }

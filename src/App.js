@@ -6,6 +6,7 @@ import './navbar.css';
 import './button.css'
 import './footer.css'
 import './video.css'
+import './dashboard.css'
 function App() {
   return (
     <BrowserRouter>

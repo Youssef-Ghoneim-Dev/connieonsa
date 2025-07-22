@@ -1,0 +1,42 @@
+body {
+  user-select: none;
+  font-family: "ArefRuqaa";
+}
+/* @font-face {
+  font-family: "Inknut Antiqua";
+  src: url("./InknutAntiqua-Black.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+    font-family: "inter";
+    src: url("./Inter_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    } */
+@font-face {
+  font-family: "Inder";
+  src: url("./Inder-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ArefRuqaa";
+  src: url("./ArefRuqaa-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d93691;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b12673;
+}
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+}

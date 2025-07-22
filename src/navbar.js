@@ -3,10 +3,10 @@ export default function Navbar() {
     <nav className="navbar" id="nav">
       <div className="navbar-content">
         <img src="/logo.jpg" alt="Logo"/>
-      <h2>Connie Onsa</h2>
+      <h2 className="Connie">Connie Onsa</h2>
       </div>
       <div className="navbar-author">
-        <h2>by Mai Mahmoud</h2>
+        <h2 className="Mai">by Mai Mahmoud</h2>
       </div>
     </nav>
   );
