@@ -6,7 +6,7 @@ export default function Navbar() {
       <h2 className="Connie">Connie Onsa</h2>
       </div>
       <div className="navbar-author">
-        <h2 className="Mai">by Mai Mahmoud</h2>
+        <h2 className="Mai">Mai Mahmoud</h2>
       </div>
     </nav>
   );

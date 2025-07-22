@@ -52,6 +52,21 @@ const Dashboard = () => {
     }
   };
 
+  function detectDevice(userAgent = "") {
+    userAgent = userAgent.toLowerCase();
+    if (userAgent.includes("samsung")) return "Samsung";
+    if (userAgent.includes("huawei")) return "Huawei";
+    if (userAgent.includes("iphone")) return "iPhone";
+    if (userAgent.includes("ipad")) return "iPad";
+    if (userAgent.includes("xiaomi")) return "Xiaomi";
+    if (userAgent.includes("oppo")) return "Oppo";
+    if (userAgent.includes("vivo")) return "Vivo";
+    if (userAgent.includes("android")) return "Android";
+    if (userAgent.includes("windows")) return "Windows";
+    if (userAgent.includes("macintosh")) return "Mac";
+    return "غير معروف";
+  }
+
   return (
     <div>
       <Navbar />
@@ -69,28 +84,28 @@ const Dashboard = () => {
           )}
           <button className="btn mt-2" onClick={resetData}>تصفير عدد الزوار والمشاهدات</button>
         </div>
-          <div className="overflow">
-                    <table className="visitor-table">
+        <div className="overflow">
+          <table className="visitor-table">
             <thead>
-                <tr>
+              <tr>
                 <th>المتصفح</th>
                 <th>اللغة</th>
                 <th>النظام</th>
                 <th>الوقت</th>
-                </tr>
+              </tr>
             </thead>
             <tbody>
-                {visitors.map((v, i) => (
+              {visitors.map((v, i) => (
                 <tr key={i}>
-                    <td>{v.userAgent}</td>
-                    <td>{v.language}</td>
-                    <td>{v.platform}</td>
-                    <td>{v.timestamp?.toDate().toLocaleString()}</td>
+                  <td>{detectDevice(v.userAgent)}</td>
+                  <td>{v.language}</td>
+                  <td>{v.platform}</td>
+                  <td>{v.timestamp?.toDate().toLocaleString()}</td>
                 </tr>
-                ))}
+              ))}
             </tbody>
-        </table>
-          </div>
+          </table>
+        </div>
         <Footer />
       </div>
     </div>
@@ -98,4 +113,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-

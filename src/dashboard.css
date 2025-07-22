@@ -1,14 +1,17 @@
 .overflow {
-  width: 1400px;
   overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .visitor-table {
-  width: 100%;
+  width: 90%;
+  flex-shrink: 0;
   border-collapse: collapse;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #fff;
-  direction: rtl;
+  margin-bottom: 20px;
 }
 
 .visitor-table th,
@@ -17,6 +20,7 @@
   padding: 12px;
   text-align: center;
   color: #000;
+  width: 300px;
 }
 
 .visitor-table thead {
