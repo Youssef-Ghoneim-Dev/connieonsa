@@ -18,7 +18,7 @@ export default function Video({onPlay}) {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quo sit debitis praesentium ducimus delectus minus, eum fuga! Aspernatur dolorem tenetur expedita suscipit nemo ducimus libero quaerat quos repudiandae. Quaerat adipisci vero nemo quo labore, officiis optio reprehenderit iure doloribus quasi, officia eos quae dolorem voluptas consequatur quisquam nobis suscipit.
             </p>
             <div className="video">
-                <video height="500px" controls onPlay={onPlay}>
+                <video controls onPlay={onPlay}>
                     <source src="/video.mp4" type="video/mp4" />
                 </video>
                 <div>

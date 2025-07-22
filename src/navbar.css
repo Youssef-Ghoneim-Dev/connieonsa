@@ -28,7 +28,7 @@
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 .flex p {
   width: 80%;
