@@ -3,9 +3,8 @@ export default function Footer() {
         <div className="footer">
             <img src="/logo.jpg" alt="logo" />
             <div className="footer-text-flex">
-                <p>
-                تم الإنشاء بواسطة المهندس
-                <span> youssef</span>
+                <p className="pp">
+                Eng.youssef
                 </p>
                 <p>جميع حقوق الطبع والنشر © محفوظة 2025</p>
             </div>

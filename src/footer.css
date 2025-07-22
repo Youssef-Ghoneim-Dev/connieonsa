@@ -29,7 +29,7 @@
   font-size: 20px;
   margin: 0;
 }
-.footer .footer-text-flex p span {
+.footer .footer-text-flex .pp {
   font-family: "ArefRuqaa";
   color: #d93691;
   font-size: 20px;
@@ -47,7 +47,7 @@
   .footer .footer-text-flex p {
     font-size: 15px;
   }
-  .footer .footer-text-flex p span {
+  .footer .footer-text-flex .pp {
     font-size: 15px;
   }
   .footer i {
@@ -88,7 +88,7 @@
   .footer .footer-text-flex p {
     font-size: 12px;
   }
-  .footer .footer-text-flex p span {
+  .footer .footer-text-flex .pp {
     font-size: 12px;
   }
   .footer i {
@@ -100,5 +100,13 @@
   }
   .flex {
     gap: 0px;
+  }
+  .carousel-inner img {
+    height: 400px !important;
+    width: 250px !important;
+    object-fit: cover;
+  }
+  .carousel-inner {
+    height: 400px !important;
   }
 }

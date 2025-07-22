@@ -5,6 +5,7 @@ import Navbar from "./navbar.js";
 import Buttons from "./button.js";
 import Footer from "./footer.js";
 import Video from "./video.js";
+import Review from "./review.js";
 const Home = () => {
   useEffect(() => {
     const alreadyTracked = localStorage.getItem("tracked");
@@ -59,6 +60,12 @@ useEffect(() => {
         <div className="flex">
             <Video onPlay={handlePlay}/>
             <Buttons />
+            <div className="flex_review">
+                <div className="review">
+                    <h3>آراء الدفعات السابقة :</h3>
+                </div>
+                <Review />
+            </div>
             <Footer />
         </div>
     </div>

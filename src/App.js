@@ -7,6 +7,7 @@ import './button.css'
 import './footer.css'
 import './video.css'
 import './dashboard.css'
+import './review.css'
 function App() {
   return (
     <BrowserRouter>

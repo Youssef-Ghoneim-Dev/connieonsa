@@ -1,4 +1,4 @@
-.btn {
+.button-call-now {
   background-color: #d93691;
   color: white;
   padding: 10px 100px;
@@ -9,7 +9,7 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.btn:hover {
+.button-call-now:hover {
   background-color: #a31061;
   transform: scale(1.1);
 }

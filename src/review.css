@@ -1,0 +1,31 @@
+.carousel-inner img {
+  height: 600px !important;
+  width: 350px !important;
+  object-fit: cover;
+}
+.carousel-inner {
+  height: 600px !important;
+}
+
+.carousel-item {
+  height: 100% !important;
+}
+.baccc {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.baccc2 {
+  padding: 10px 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+.review {
+  width: 100%;
+  padding-right: 100px;
+  direction: rtl;
+}

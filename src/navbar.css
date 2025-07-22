@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #e1e1e1;
+  background: transparent;
   color: #d93691;
   display: flex;
   justify-content: space-between;
@@ -39,6 +39,14 @@
 }
 .p {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex_review {
+  width: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

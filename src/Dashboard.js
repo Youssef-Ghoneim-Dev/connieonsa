@@ -82,7 +82,7 @@ const Dashboard = () => {
           ) : (
             <p>جارٍ تحميل عدد المشاهدات...</p>
           )}
-          <button className="btn mt-2" onClick={resetData}>تصفير عدد الزوار والمشاهدات</button>
+          <button className="button-call-now" onClick={resetData}>تصفير عدد الزوار والمشاهدات</button>
         </div>
         <div className="overflow">
           <table className="visitor-table">
