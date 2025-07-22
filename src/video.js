@@ -23,7 +23,7 @@ export default function Video({onPlay}) {
                 </video>
                 <div>
                     <i className='bx bxs-show'></i>
-                    <p>{totalViews !== null ? totalViews : "جارٍ التحميل..."}</p>
+                    <p style={{"direction": "rtl"}}>{totalViews !== null ? totalViews : "جارٍ التحميل..."}</p>
                 </div>
             </div>
         </>
