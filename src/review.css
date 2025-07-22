@@ -1,14 +1,5 @@
 .carousel-inner img {
-  height: 600px !important;
-  width: 350px !important;
-  object-fit: cover;
-}
-.carousel-inner {
-  height: 600px !important;
-}
-
-.carousel-item {
-  height: 100% !important;
+  width: 100% !important;
 }
 .baccc {
   background-color: rgba(0, 0, 0, 0.5);
@@ -34,4 +25,13 @@
   direction: rtl;
   margin: 0;
   padding: 0;
+}
+.ooo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ccc {
+  text-align: center;
 }

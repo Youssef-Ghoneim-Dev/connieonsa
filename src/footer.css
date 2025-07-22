@@ -31,7 +31,6 @@
 }
 .footer .footer-text-flex .pp {
   font-family: "ArefRuqaa";
-  color: #d93691;
   font-size: 20px;
   margin: 0;
 }
@@ -100,14 +99,6 @@
   }
   .flex {
     gap: 0px;
-  }
-  .carousel-inner img {
-    height: 400px !important;
-    width: 250px !important;
-    object-fit: cover;
-  }
-  .carousel-inner {
-    height: 400px !important;
   }
   .navbar {
     height: 60px;

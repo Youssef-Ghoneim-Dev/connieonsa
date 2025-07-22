@@ -3,23 +3,22 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default function Review(){
     const images = [
-  "photo_1_2025-07-22_13-51-53.jpg",
-  "photo_2_2025-07-22_13-51-53.jpg",
-  "photo_3_2025-07-22_13-51-53.jpg",
-  "photo_4_2025-07-22_13-51-53.jpg",
-  "photo_5_2025-07-22_13-51-53.jpg",
-  "photo_6_2025-07-22_13-51-53.jpg",
-  "photo_7_2025-07-22_13-51-53.jpg",
-  "photo_8_2025-07-22_13-51-53.jpg",
-  "photo_9_2025-07-22_13-51-53.jpg",
-  "photo_10_2025-07-22_13-51-53.jpg",
-  "photo_11_2025-07-22_13-51-53.jpg",
-  "photo_12_2025-07-22_13-51-53.jpg",
-  "photo_13_2025-07-22_13-51-53.jpg"
+  "photo_1_2025-07-22_18-00-26.jpg",
+  "photo_2_2025-07-22_18-00-26.jpg",
+  "photo_3_2025-07-22_18-00-26.jpg",
+  "photo_4_2025-07-22_18-00-26.jpg",
+  "photo_5_2025-07-22_18-00-26.jpg",
+  "photo_6_2025-07-22_18-00-26.jpg",
+  "photo_7_2025-07-22_18-00-26.jpg",
+  "photo_8_2025-07-22_18-00-26.jpg",
+  "photo_9_2025-07-22_18-00-26.jpg",
+  "photo_10_2025-07-22_18-00-26.jpg",
+  "photo_11_2025-07-22_18-00-26.jpg",
+  "photo_12_2025-07-22_18-00-26.jpg",
 ];
 
     return(
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+        <div id="carouselExampleIndicators" className="carousel slide ooo" data-bs-ride="carousel" data-bs-interval="8000">
             <div className="carousel-indicators baccc2">
                 {images.map((item, index) => (
                     <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className={`${index === 0 ? 'active' : ''}`} aria-current="true" aria-label={`slide ${index}`}></button>
@@ -28,7 +27,7 @@ export default function Review(){
             <div className="carousel-inner">
                 {images.map((item, index) => (
                     <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-                        <img src={`/./photes/${item}`} className="d-block" alt={index} />
+                        <img src={`/./photes/${item}`} className="d-block ccc" alt={index} />
                     </div>
                 ))}
 
