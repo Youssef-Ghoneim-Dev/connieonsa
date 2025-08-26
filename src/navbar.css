@@ -8,6 +8,7 @@
   padding: 0px 30px;
   box-sizing: border-box;
   margin-bottom: 20px;
+  width: 100%;
 }
 .navbar-content {
   display: flex;
