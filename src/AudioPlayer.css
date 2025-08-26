@@ -28,14 +28,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.btn {
+.btn5git {
   background: #d93691;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 34px;
   transition: 0.3s;
 }
 
@@ -65,7 +65,7 @@
   }
 }
 
-.btn:hover {
+.btn5:hover {
   background: #a31061;
   color: #fff;
 }

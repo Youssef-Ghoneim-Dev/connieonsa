@@ -1,6 +1,8 @@
 .header {
-  font-size: 25px;
+  font-size: 34px;
   color: #000000;
+    width: 80%;
+    text-align: center;
   margin-bottom: 15px;
 }
 .audioo {
@@ -15,7 +17,7 @@
   width: 100%;
 }
 .description {
-  font-size: 20px;
+  font-size: 24px;
   color: #3e3e3e;
   direction: rtl;
   text-align: center;
@@ -23,7 +25,7 @@
 
 .a {
   font-size: 30px;
-  color: #3e3e3e;
+  color: #d93691;
   text-decoration: none;
 }
 .infor {
