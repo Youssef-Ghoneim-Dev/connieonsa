@@ -75,7 +75,7 @@ const AudioPlayer = ({ audioUrl, title }) => {
         <div className="time">
           {formatTime(currentTime)} | {formatTime(duration)}
         </div>
-        <button onClick={togglePlay} className="btn5">
+        <button onClick={togglePlay} className="btn5" disabled={isLoading}>
           {isPlaying ? <i className="bx bx-pause"></i> : <i className="bx bx-play"></i>}
         </button>
       </div>
