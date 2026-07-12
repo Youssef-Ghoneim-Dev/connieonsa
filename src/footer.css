@@ -39,13 +39,13 @@
 }
 
 .footer i {
-    color: #d93691;
+    color: #b35b88;
     font-size: 50px;
     transition: 0.5s all;
 }
 
 .footer i:hover {
-    color: #a31061;
+    color: #9d4371;
 }
 
 @media (max-width: 680px) {
